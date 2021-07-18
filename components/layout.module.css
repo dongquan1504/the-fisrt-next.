@@ -13,3 +13,18 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: -1000px;
+}
+.button{
+  padding: 12px 30px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid blue;
+  background-color: black;
+  margin: 40px 20px;
+}

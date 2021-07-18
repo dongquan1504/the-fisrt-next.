@@ -4,6 +4,7 @@ import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import { useRouter } from 'next/router';
+import Button from "../../components/button"
 
 export default function Post({ postData }) {
   const router = useRouter()
@@ -14,6 +15,7 @@ export default function Post({ postData }) {
     return <div>Loading...</div>
   }
   return (
+    <>
     <Layout>
       <Head>
         <title>{postData.title}</title>
@@ -30,6 +32,8 @@ export default function Post({ postData }) {
         </div>
       </article>
     </Layout>
+    <Button/>
+    </>
   );
 }
 export async function getStaticPaths() {
